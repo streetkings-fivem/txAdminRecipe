@@ -1,0 +1,73 @@
+$engine: 3
+$onesync: on
+name: StreetKings
+version: 1.0.0
+author: 919DESIGN & Envi-Scripts
+description: A FiveM racing game built by 919DESIGN and Envi-Scripts
+
+tasks:
+  #  Download Base Files
+  - action: download_github
+    src: https://github.com/streetkings-fivem/txAdminRecipe
+    ref: main
+    dest: ./tmp/streetkings
+
+  - action: move_path
+    src: ./tmp/streetkings/server.cfg
+    dest: ./server.cfg
+
+  - action: move_path
+    src: ./tmp/streetkings/SKIcon.png
+    dest: ./SKIcon.png
+
+  # Prepare Database
+  - action: connect_database
+  - action: query_database
+    file: ./tmp/streetkings/streetkings.sql
+
+  # STANDALONE
+  - action: download_github
+    dest: ./resources/[standalone]/bob74_ipl
+    ref: master
+    src: https://github.com/Bob74/bob74_ipl
+
+  # VOICE
+  - action: download_github
+    dest: ./resources/[standalone]/pma-voice
+    ref: main
+    src: https://github.com/AvarianKnight/pma-voice
+
+  # StreetKings Resources
+  - action: download_github
+    dest: ./resources/streetkings
+    ref: main
+    src: https://github.com/streetkings-fivem/streetkings
+
+  - action: download_github
+    dest: ./resources/[assets]/streetkings_audio
+    ref: main
+    src: https://github.com/streetkings-fivem/streetkings_audio
+
+  - action: download_github
+    dest: ./resources/[assets]/streetkings_blips
+    ref: main
+    src: https://github.com/streetkings-fivem/streetkings_blips
+
+  # OX
+  - action: download_file
+    path: ./tmp/ox_lib.zip
+    url: https://github.com/communityox/ox_lib/releases/latest/download/ox_lib.zip
+  - action: unzip
+    dest: ./resources/[ox]
+    src: ./tmp/ox_lib.zip
+
+  - action: download_file
+    path: ./tmp/oxmysql.zip
+    url: https://github.com/communityox/oxmysql/releases/latest/download/oxmysql.zip
+  - action: unzip
+    dest: ./resources/[ox]
+    src: ./tmp/oxmysql.zip
+
+  # Clean up
+  - action: remove_path
+    path: ./tmp
