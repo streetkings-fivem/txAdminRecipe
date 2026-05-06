@@ -3,7 +3,7 @@ $onesync: on
 name: StreetKings
 version: 1.0.0
 author: 919DESIGN & Envi-Scripts
-description: A FiveM racing game built by 919DESIGN and Envi-Scripts
+description: StreetKings is a freeroam street racing gamemode for FiveM where you can race solo or compete against up to 20 other players. Earn XP to level up your character and vehicle, progressing through five classes - STARTER, C, B, A, and S. A curated list of races refreshes every day, with a bonus reward for players who complete them all. A mini-campaign of cinematic story missions introduces players to its theme and setting.
 
 tasks:
   #  Download Base Files
