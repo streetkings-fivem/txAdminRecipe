@@ -1,7 +1,4 @@
-# txAdminRecipe
-The official txAdmin recipe for StreetKings.
-
-# StreetKings
+# StreetKings (txAdminRecipe)
 ### A FiveM Street Racing Experience
 *A collaboration between 919DESIGN and ENVI-SCRIPTS*
 
@@ -13,7 +10,7 @@ StreetKings is a fully custom, self-contained street racing gamemode for FiveM, 
 
 ## Requirements
 
-- A clean FXServer installation running **GTA 5 build 3751** ("A Safehouse in the Hills") or newer
+- A clean FXServer installation (artifact 25770+)
 - `oxmysql` — database connector (installed automatically by the recipe)
 - `ox_lib` — shared library (installed automatically by the recipe)
 - A MySQL-compatible database (preferably MariaDB)
@@ -23,6 +20,12 @@ StreetKings is a fully custom, self-contained street racing gamemode for FiveM, 
 ---
 
 ## What's Included
+
+### Story
+- A mini-campaign of cinematic story missions introduces players to the world's theme and setting
+
+### Custom Action Camera
+- StreetKings ships with a fully custom cinematic racing camera system built from the ground up — every bump, turn, brake, and jump is felt through the camera.
 
 ### Progression & Saves
 - Per-player, per-vehicle XP and unlock tracking that persists between sessions
@@ -72,11 +75,19 @@ StreetKings is a fully custom, self-contained street racing gamemode for FiveM, 
 - All race and challenge types tracked globally
 - Filterable by All Time, Daily, Weekly, and Monthly
 
-### Story
-- A mini-campaign of cinematic story missions introduces players to the world's theme and setting
-
 ---
 
-## Driving Feel
+## Credits
 
-StreetKings ships with a fully custom cinematic racing camera system built from the ground up — every bump, turn, brake, and jump is felt through the camera. Full keyboard/mouse and controller input is supported consistently across freeroam, events, and all UI.
+### Testing
+- 0nlyjim
+- cf3cruse
+- davidtexture
+- Devexity
+- drcroll
+- magnets.
+- NickSparx
+- ProGamerDude
+- zStretz
+- t.dot.
+- OGChroma
