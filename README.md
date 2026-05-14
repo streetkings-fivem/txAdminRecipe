@@ -1,10 +1,7 @@
 # StreetKings (txAdminRecipe)
-### A FiveM Street Racing Experience
-*A collaboration between 919DESIGN and ENVI-SCRIPTS*
-
----
-
 StreetKings is a fully custom, self-contained street racing gamemode for FiveM, inspired by the tone and feel of Midnight Club LA and the Black Box-era Need for Speed titles. Built around car culture, organic discovery, and a persistent progression system, it treats FiveM as a proper game platform rather than a roleplay sandbox.
+
+*A collaboration between 919DESIGN and ENVI-SCRIPTS*
 
 ---
 
