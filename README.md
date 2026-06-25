@@ -17,7 +17,7 @@
 
 ## Overview
 
-StreetKings is a self-contained street racing gamemode built around car culture, organic discovery, and persistent progression. It treats FiveM as a proper game platform — not a roleplay sandbox.
+StreetKings is a self-contained street racing gamemode built around car culture, organic discovery, and persistent progression. It treats FiveM as a proper game platform rather than a roleplay sandbox.
 
 **Play now:** [`cfx.re/join/98geoy`](https://cfx.re/join/98geoy) &nbsp;•&nbsp; **Community:** [`discord.gg/cawQqAQXF3`](https://discord.gg/cawQqAQXF3)
 
@@ -47,8 +47,8 @@ StreetKings is a self-contained street racing gamemode built around car culture,
 | Requirement | Notes |
 |---|---|
 | FXServer | Clean install, artifact `25770+` |
-| `oxmysql` | Database connector — *installed automatically* |
-| `ox_lib` | Shared library — *installed automatically* |
+| `oxmysql` | Database connector (installed automatically) |
+| `ox_lib` | Shared library (installed automatically) |
 | Database | MySQL-compatible (MariaDB preferred) |
 
 > **Base game assets only.** No MLOs, car mods, or map mods required. The only streamed assets are a custom map-blip stream and a native audio soundset bundled with the resource.
@@ -61,39 +61,39 @@ StreetKings is a self-contained street racing gamemode built around car culture,
 A mini-campaign of cinematic story missions introduces players to the world's theme and setting.
 
 ### 🎥 Custom Action Camera
-A fully custom cinematic racing camera built from the ground up — every bump, turn, brake, and jump is felt through the lens.
+A fully custom cinematic racing camera built from the ground up. Every bump, turn, brake, and jump is felt through the lens.
 
 ### 💾 Progression & Saves
 - Per-player, per-vehicle XP and unlock tracking that persists between sessions
 - Up to **3 save slots** per player, each with independent stats and progression
 - Vehicle-specific upgrade history carried per car
-- MySQL-backed save blob — arbitrary data attaches to any feature without hard schema limits
+- MySQL-backed save blob, so arbitrary data attaches to any feature without hard schema limits
 
 ### 🚗 Vehicles & Classes
 - Five classes: **STARTER · C · B · A · S**
 - Visual and performance upgrades unlocked through per-vehicle progression
-- Discoverable dealerships organized by class — higher tiers require sufficient player level
+- Discoverable dealerships organized by class, where higher tiers require sufficient player level
 - Customizable discoverable garages with active vehicle management and recovery
 
 ### 🗺️ World & Discovery
-- Performance shops, visual shops, garages, and dealerships are hidden — found naturally in freeroam
+- Performance shops, visual shops, garages, and dealerships are hidden and found naturally in freeroam
 - Custom map blips for performance and visual shops give native-feeling blip variety
 - Ambient NPC races triggered by doing a burnout at a red light
 
 ### 🏆 Events
 | Event | Description |
 |---|---|
-| **Race** | Competitive multiplayer — sprint, circuit, and point-to-point |
-| **Time Attack** | Solo leaderboard runs with global + daily/weekly/monthly tracking |
+| **Race** | Competitive multiplayer with sprint, circuit, and point-to-point structures |
+| **Time Attack** | Solo leaderboard runs with global plus daily/weekly/monthly tracking |
 | **Delivery** | Timed objective runs with police risk |
 | **Speed Cameras** | Freeroam top-speed challenges rewarding leaderboard position |
 | **Stunt Jumps** | Insane stunt challenges |
-| **Rampage** | Timed chaos events — cause max damage, triggers a police pursuit |
+| **Rampage** | Timed chaos events; cause max damage and trigger a police pursuit |
 
 > A **daily featured playlist** rotates event logic and rewards full completion.
 
 ### 📱 Phone Interface
-- **TAB** opens the player phone — the central hub for events, stats, leaderboards, settings, and utilities
+- **TAB** opens the player phone, the central hub for events, stats, leaderboards, settings, and utilities
 - Full controller support across all menus and phone interactions
 - Built-in towing/recovery tools, map utilities, and event browsing
 
