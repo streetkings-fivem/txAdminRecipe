@@ -1,82 +1,124 @@
-# StreetKings (txAdminRecipe)
-StreetKings is a fully custom, self-contained street racing gamemode for FiveM, inspired by the tone and feel of Midnight Club LA and the Black Box-era Need for Speed titles. Built around car culture, organic discovery, and a persistent progression system, it treats FiveM as a proper game platform rather than a roleplay sandbox.
+<div align="center">
 
-*A collaboration between 919DESIGN and ENVI-SCRIPTS*
+# 🏁 StreetKings
+
+**A fully custom street racing gamemode for FiveM**
+
+*Inspired by Midnight Club LA and the Black Box-era Need for Speed titles.*
+
+[![Join Server](https://img.shields.io/badge/Play_Now-Connect-E63946?style=for-the-badge)](https://cfx.re/join/98geoy)
+[![Discord](https://img.shields.io/badge/Discord-Join_Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/cawQqAQXF3)
+
+*A collaboration between **919DESIGN** and **ENVI-SCRIPTS***
+
+</div>
+
+---
+
+## Overview
+
+StreetKings is a self-contained street racing gamemode built around car culture, organic discovery, and persistent progression. It treats FiveM as a proper game platform — not a roleplay sandbox.
+
+**Play now:** [`cfx.re/join/98geoy`](https://cfx.re/join/98geoy) &nbsp;•&nbsp; **Community:** [`discord.gg/cawQqAQXF3`](https://discord.gg/cawQqAQXF3)
+
+---
+
+## Screenshots
+
+<table>
+  <tr>
+    <td><a href="SKSS1.png"><img src="SKSS1.png" width="100%"></a></td>
+    <td><a href="SKSS2.png"><img src="SKSS2.png" width="100%"></a></td>
+  </tr>
+  <tr>
+    <td><a href="SKSS3.png"><img src="SKSS3.png" width="100%"></a></td>
+    <td><a href="SKSS4.png"><img src="SKSS4.png" width="100%"></a></td>
+  </tr>
+  <tr>
+    <td><a href="SKSS5.png"><img src="SKSS5.png" width="100%"></a></td>
+    <td><a href="SKSS6.png"><img src="SKSS6.png" width="100%"></a></td>
+  </tr>
+</table>
 
 ---
 
 ## Requirements
 
-- A clean FXServer installation (artifact 25770+)
-- `oxmysql` — database connector (installed automatically by the recipe)
-- `ox_lib` — shared library (installed automatically by the recipe)
-- A MySQL-compatible database (preferably MariaDB)
+| Requirement | Notes |
+|---|---|
+| FXServer | Clean install, artifact `25770+` |
+| `oxmysql` | Database connector — *installed automatically* |
+| `ox_lib` | Shared library — *installed automatically* |
+| Database | MySQL-compatible (MariaDB preferred) |
 
-> StreetKings uses **base game assets only**. No MLOs, no car mods, no map mods are required. The only streamed assets are a custom map blips stream and a native audio soundset bundled with the resource.
+> **Base game assets only.** No MLOs, car mods, or map mods required. The only streamed assets are a custom map-blip stream and a native audio soundset bundled with the resource.
 
 ---
 
-## What's Included
+## Features
 
-### Story
-- A mini-campaign of cinematic story missions introduces players to the world's theme and setting
+### 📖 Story
+A mini-campaign of cinematic story missions introduces players to the world's theme and setting.
 
-### Custom Action Camera
-- StreetKings ships with a fully custom cinematic racing camera system built from the ground up — every bump, turn, brake, and jump is felt through the camera.
+### 🎥 Custom Action Camera
+A fully custom cinematic racing camera built from the ground up — every bump, turn, brake, and jump is felt through the lens.
 
-### Progression & Saves
+### 💾 Progression & Saves
 - Per-player, per-vehicle XP and unlock tracking that persists between sessions
-- Up to 3 save slots per player, each with independent stats and progression
+- Up to **3 save slots** per player, each with independent stats and progression
 - Vehicle-specific upgrade history carried per car
-- MySQL-backed save blob - arbitrary data can be attached to any feature without hard schema limits
+- MySQL-backed save blob — arbitrary data attaches to any feature without hard schema limits
 
-### Vehicles & Classes
-- Five vehicle classes: **STARTER, C, B, A, and S**
-- All visual and performance upgrades unlocked through progression with each specific vehicle
-- Discoverable dealerships organized by class - higher-tier dealers require sufficient player level to access
+### 🚗 Vehicles & Classes
+- Five classes: **STARTER · C · B · A · S**
+- Visual and performance upgrades unlocked through per-vehicle progression
+- Discoverable dealerships organized by class — higher tiers require sufficient player level
 - Customizable discoverable garages with active vehicle management and recovery
 
-### World & Discovery
-- Performance shops, visual shops, garages, dealerships are hidden and must be discovered naturally in freeroam
-- Custom map blips were created for peformance and visual shops for native feeling blip variety
+### 🗺️ World & Discovery
+- Performance shops, visual shops, garages, and dealerships are hidden — found naturally in freeroam
+- Custom map blips for performance and visual shops give native-feeling blip variety
 - Ambient NPC races triggered by doing a burnout at a red light
 
-### Events
-- **Race**: Multiplayer competitive events with sprint, circuit, and point-to-point structures
-- **Time Attack**: Solo leaderboard runs with global and daily/weekly/monthly tracking
-- **Delivery**: Timed objective runs with police risk
-- **Speed Cameras**: Freeroam top-speed challenge events that reward for leaderboard positioning
-- **Stunt Jumps**: Insane stunt challenges
-- **Rampage**: Timed chaos events, cause as much damage as you can, results in a police pursuit
-- Daily featured playlist with rotating event logic and rewards for full completion
+### 🏆 Events
+| Event | Description |
+|---|---|
+| **Race** | Competitive multiplayer — sprint, circuit, and point-to-point |
+| **Time Attack** | Solo leaderboard runs with global + daily/weekly/monthly tracking |
+| **Delivery** | Timed objective runs with police risk |
+| **Speed Cameras** | Freeroam top-speed challenges rewarding leaderboard position |
+| **Stunt Jumps** | Insane stunt challenges |
+| **Rampage** | Timed chaos events — cause max damage, triggers a police pursuit |
 
-### Phone Interface
-- TAB opens the player phone - the central hub for events, stats, leaderboards, settings, and utilities
+> A **daily featured playlist** rotates event logic and rewards full completion.
+
+### 📱 Phone Interface
+- **TAB** opens the player phone — the central hub for events, stats, leaderboards, settings, and utilities
 - Full controller support across all menus and phone interactions
-- Towing/recovery tools, map utilities, and event browsing built in
+- Built-in towing/recovery tools, map utilities, and event browsing
 
-### Police & Risk
+### 🚓 Police & Risk
 - Server-controlled NPC police traps spawn dynamically across the map
 - Radar detector system with custom native audio cues
 - Wanted level triggered by traffic collisions and pedestrian incidents
 
-### Hang Out Zones
-- Players cannot freely exit their vehicle outside of designated social zones
-- Hang Out Zones allow proximity chat and car meetup interactions as well as on-foot gameplay
+### 🅿️ Hang Out Zones
+- Players cannot freely exit their vehicle outside designated social zones
+- Hang Out Zones enable proximity chat, car meetups, and on-foot gameplay
 
-### Cosmetics
-- Avatar clothing system with a dedicated gameplay-earnable cosmetic currency (**GearCoins**)
+### 👕 Cosmetics
+- Avatar clothing system with a gameplay-earnable currency (**GearCoins**)
 - Avatar is per-account and carries across all save slots
 
-### Leaderboards
+### 📊 Leaderboards
 - All race and challenge types tracked globally
-- Filterable by All Time, Daily, Weekly, and Monthly
+- Filterable by **All Time · Daily · Weekly · Monthly**
 
 ---
 
 ## Credits
 
-### Testing
+**Testing**
 - 0nlyjim
 - cf3cruse
 - davidtexture
@@ -88,3 +130,12 @@ StreetKings is a fully custom, self-contained street racing gamemode for FiveM, 
 - zStretz
 - t.dot.
 - OGChroma
+
+---
+
+<div align="center">
+
+[![Join Server](https://img.shields.io/badge/Play_Now-Connect-E63946?style=for-the-badge)](https://cfx.re/join/98geoy)
+[![Discord](https://img.shields.io/badge/Discord-Join_Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/cawQqAQXF3)
+
+</div>
